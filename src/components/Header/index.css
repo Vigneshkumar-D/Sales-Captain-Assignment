@@ -1,0 +1,26 @@
+.product-invisible {
+  display: none;
+}
+.product-visible {
+  z-index: 1;
+  display: block;
+  position: absolute;
+  right: 8%;
+}
+.solution-invisible {
+  display: none;
+}
+.solution-visible {
+  display: block;
+  z-index: 1;
+  position: absolute;
+  right: 8%;
+}
+
+.get-started-btn:hover {
+  background-color: #3b82f6;
+}
+.sign-in-button:hover {
+  color: #3b82f6;
+  border-color: #3b82f6;
+}

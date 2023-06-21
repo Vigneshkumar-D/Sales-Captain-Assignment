@@ -1,0 +1,5 @@
+.list-item:hover {
+  margin-bottom: 20px;
+  transition: 1s ease-in-out 1s;
+  /* transition: 2s; */
+}
