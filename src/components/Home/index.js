@@ -56,6 +56,37 @@ import {
   BusinessCardSubCon,
   BusinessCardSubHeading,
   BusinessCardSubDes,
+  ReadyToGrowContainer,
+  ReadyToGrowHeading,
+  ReadyToGrowDescription,
+  RattingContainer,
+  RattingText,
+  RattingImage,
+  ImageContainer,
+  GoogleImage,
+  CapterraImage,
+  SoftwareAdviceImage,
+  FooterContainer,
+  FooterAppLogo,
+  FooterSubContainer,
+  FooterSubContainerOne,
+  ProductsContainer,
+  ProductsHeading,
+  Para,
+  PartnerContainer,
+  PartnerHeading,
+  FooterIndustryContainer,
+  FooterIndustryHeading,
+  AddressContainer,
+  CountryName,
+  Address,
+  SocialMediaImageContainer,
+  SocialMediaImage,
+  CopyRightsContainer,
+  CopyRightsHeading,
+  PolicyContainer,
+  PolicyTitle,
+  ProductsNameCon,
 } from './styledComponents'
 
 const makeYourBusinessDataList = [
@@ -384,6 +415,46 @@ const brandLogo = [
   },
 ]
 
+const productsNameList = [
+  {id: 1, name: 'Reviews'},
+  {id: 2, name: 'Listings'},
+  {id: 3, name: 'Marketing'},
+  {id: 4, name: 'WebBoost'},
+  {id: 5, name: 'Referrals'},
+  {id: 6, name: 'Payments'},
+  {id: 7, name: 'Products'},
+  {id: 8, name: 'WebChats'},
+  {id: 9, name: 'Messaging'},
+  {id: 10, name: 'Captain AI'},
+  {id: 11, name: 'Feedback & Survey'},
+  {id: 12, name: 'Competitions &'},
+  {id: 13, name: 'Insights'},
+  {id: 14, name: 'Customer Manager'},
+]
+
+const industryNameList = [
+  {id: 1, name: 'Healthcare'},
+  {id: 2, name: 'Dental'},
+  {id: 3, name: 'Home Services'},
+  {id: 4, name: 'Retail'},
+  {id: 5, name: 'Hospitality'},
+  {id: 6, name: 'Automotive'},
+  {id: 7, name: 'Restaurants'},
+  {id: 8, name: 'Wellness'},
+  {id: 9, name: 'Professional'},
+  {id: 10, name: 'Services'},
+]
+
+const partnerNameList = [
+  {id: 1, name: 'Become a Partner'},
+  {id: 2, name: 'Company'},
+  {id: 3, name: 'Contact'},
+  {id: 4, name: 'Careers'},
+  {id: 5, name: 'Press'},
+  {id: 6, name: 'Partners'},
+  {id: 7, name: 'Legal'},
+]
+
 const Home = () => (
   <>
     <Header />
@@ -543,6 +614,114 @@ const Home = () => (
       </ExpertSubContainer>
       <ViewAllResourceButton>View All Resources</ViewAllResourceButton>
     </ExpertContainer>
+    <ReadyToGrowContainer>
+      <ReadyToGrowHeading>Ready to grow?</ReadyToGrowHeading>
+      <ReadyToGrowDescription>
+        See why 100,000+ businesses trust us. Book a personalized demo to see
+        how SalesCaptain provides you the right tools to grow your business.
+      </ReadyToGrowDescription>
+      <InputContainer>
+        <InputElement placeholder="ENTER YOUR EMAIL" />
+        <GetDemoButton type="button" className="demo-input-btn">
+          GET DEMO
+        </GetDemoButton>
+      </InputContainer>
+      <RattingContainer>
+        <RattingImage
+          src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af532e37289b6270d7aba8_stars.webp"
+          atl="Ratting image"
+        />
+        <RattingText>500+ Reviews</RattingText>
+      </RattingContainer>
+      <ImageContainer>
+        <GoogleImage
+          src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af562b0cd76f4e7026cba9_18-187112_google-transparent-white-logo.webp"
+          alt="Google image"
+        />
+        <CapterraImage
+          src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af5631b8d59acd37236ca0_c-dark.webp"
+          alt="Capterra image"
+        />
+        <SoftwareAdviceImage
+          src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af562bb61c17fbd3d37043_6033de5cf82f810004782cb7.webp"
+          alt="SoftwareAdviceImage"
+        />
+      </ImageContainer>
+    </ReadyToGrowContainer>
+
+    <FooterContainer>
+      <FooterSubContainer>
+        <FooterAppLogo
+          src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62d85afd15788d0263af7b58_full_logo_white.webp"
+          alt="App Logo"
+        />
+        <FooterSubContainerOne>
+          <ProductsContainer>
+            <ProductsHeading>Products</ProductsHeading>
+            <ProductsNameCon>
+              {productsNameList.map(eachItem => (
+                <Para key={eachItem.id}>{eachItem.name}</Para>
+              ))}
+            </ProductsNameCon>
+          </ProductsContainer>
+          <FooterIndustryContainer>
+            <FooterIndustryHeading>Industry</FooterIndustryHeading>
+            {industryNameList.map(eachItem => (
+              <Para key={eachItem.id}>{eachItem.name}</Para>
+            ))}
+          </FooterIndustryContainer>
+          <PartnerContainer>
+            <PartnerHeading>Partner</PartnerHeading>
+            {partnerNameList.map(eachItem => (
+              <Para key={eachItem.id}>{eachItem.name}</Para>
+            ))}
+          </PartnerContainer>
+          <AddressContainer>
+            <>
+              <CountryName>US Headquarters</CountryName>
+              <Address>
+                <Para>447 Broadway,</Para>
+                <Para>2nd Floor,</Para>
+                <Para>New York 10013</Para>
+              </Address>
+            </>
+            <>
+              <CountryName>India office</CountryName>
+              <Address>
+                <Para>1467 Janani HSR,</Para>
+                <Para>Layout Bengaluru,</Para>
+                <Para>Karnataka 560102</Para>
+              </Address>
+            </>
+            <>
+              <CountryName>London office</CountryName>
+              <Address>
+                <Para>79 - 81 Borough Rd,</Para>
+                <Para>London England,</Para>
+                <Para>400706</Para>
+              </Address>
+            </>
+          </AddressContainer>
+        </FooterSubContainerOne>
+      </FooterSubContainer>
+      <SocialMediaImageContainer>
+        <SocialMediaImage src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af585d1036bf0791c31e8b_Group%2017124.svg" />
+        <SocialMediaImage src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af585ec5d9c15c1e77be28_Group%2017127.svg" />
+        <SocialMediaImage src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af585d612c975d00d3f286_Group%2017130.svg" />
+        <SocialMediaImage src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62af585e3249a91eabae0c8e_Group%2017132.svg" />
+      </SocialMediaImageContainer>
+    </FooterContainer>
+    <CopyRightsContainer>
+      <CopyRightsHeading>
+        © SalesCaptain Inc 2023 (A division of SalesBook Technologies Pvt Ltd)
+      </CopyRightsHeading>
+      <PolicyContainer>
+        <PolicyTitle>Terms and conditions</PolicyTitle>
+        <PolicyTitle>Privacy</PolicyTitle>
+        <PolicyTitle>Refund Policy</PolicyTitle>
+        <PolicyTitle>CCPA</PolicyTitle>
+      </PolicyContainer>
+    </CopyRightsContainer>
   </>
 )
 export default Home

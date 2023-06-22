@@ -33,7 +33,6 @@ class Header extends Component {
 
   onLeaveProduct = () => {
     productCssProperty = 'product-invisible'
-    console.log('Moved')
     this.setState(prevState => ({isHovered: !prevState.isHovered}))
   }
 
@@ -51,7 +50,10 @@ class Header extends Component {
     return (
       <HeaderMainContainer>
         <HeaderContainer>
-          <AppLogo src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62d857bb593d0d6f444528aa_full_logo.webp" />
+          <AppLogo
+            src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62d857bb593d0d6f444528aa_full_logo.webp"
+            alt="App Logo"
+          />
           <HeaderSubContainer>
             <MenuContainer>
               <ProductTitle

@@ -42,7 +42,10 @@ class Login extends Component {
         <LoginPageSubContainer>
           <LoginPageFormContainer>
             <LoginPageForm>
-              <AppLogo src="https://app.salescaptain.com/static/media/loginLogo.3814067f45867b0a416c.png" />
+              <AppLogo
+                src="https://app.salescaptain.com/static/media/loginLogo.3814067f45867b0a416c.png"
+                alt="App Logo"
+              />
               <LoginHeading>Login</LoginHeading>
               <CustomInputEmail type="text" placeholder="Email" />
               <PasswordContainer>

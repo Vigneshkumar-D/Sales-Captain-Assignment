@@ -54,27 +54,34 @@ export const InputContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3rem 0px 5rem;
+  margin: 1rem 0px 4rem;
 `
 
 export const InputElement = styled.input`
   padding: 1rem;
   font-size: 1rem;
-  width: 25rem;
+  width: 26rem;
+  height: 3rem;
   margin-right: 1rem;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: 1px solid lightgray;
+  //   outline: 1px solid #3b82f6;
 `
 
 export const GetDemoButton = styled.button`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 1rem;
   border-radius: 10px;
-  border: 1px solid gray;
+  border: none;
   width: 10rem;
   color: white;
   background-color: #0b69ff;
-  font-weight: 600;
+  font-weight: 400;
+  font-family: 'Roboto';
   font-size: 1rem;
+  height: 3rem;
 `
 
 export const SiteBackgroundImage = styled.img`
@@ -198,9 +205,10 @@ export const MemberCardRowSix = styled.div`
   margin-top: 1rem;
 `
 
-export const SmallCard = styled.h2`
+export const SmallCard = styled.div`
   background-color: skyblue;
   opacity: 0.6;
+  z-index: -1;
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 4px;
@@ -211,8 +219,6 @@ export const SmallCard = styled.h2`
   color: black;
   font-size: 16px;
   font-weight: 400;
-  justify-content: center;
-  align-items: center;
 `
 export const BusinessNxtLevelContainer = styled.div`
   display: flex;
@@ -362,15 +368,259 @@ export const ExpertSubContainer = styled.div`
   align-items: center;
   flex-wrap: wrap;
   margin-top: 7%;
-  margin-bottom: 7%;
+  margin-bottom: 3%;
   margin-left: 5%;
   margin-right: 5%;
 `
 export const ViewAllResourceButton = styled.button`
   border: none;
   background-color: transparent;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #3b82f6;
-  margin-bottom: 7%;
+  margin-bottom: 0%;
+`
+export const ReadyToGrowContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #222222;
+  margin-top: 7%;
+  padding-bottom: 7%;
+  padding-top: 5%;
+`
+export const ReadyToGrowHeading = styled.h1`
+  font-size: 35px;
+  font-weight: 700;
+  font-family: 'Roboto';
+  color: #ffffff;
+`
+
+export const ReadyToGrowDescription = styled.p`
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Roboto';
+  color: #ffffff;
+  width: 50%;
+  text-align: center;
+`
+
+export const RattingContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0%;
+`
+export const RattingText = styled.p`
+  font-size: 15px;
+  font-weight: 300;
+  font-family: 'Roboto';
+  color: #ffffff;
+  text-align: center;
+  padding-left: 10px;
+`
+
+export const RattingImage = styled.img`
+  height: 30px;
+  width: 220px;
+`
+
+export const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2%;
+`
+
+export const GoogleImage = styled.img`
+  height: 25px;
+  width: 90px;
+  margin-right: 1rem;
+`
+
+export const CapterraImage = styled.img`
+  height: 35px;
+  width: 120px;
+  margin-right: 1rem;
+`
+
+export const SoftwareAdviceImage = styled.img`
+  height: 30px;
+  width: 200px;
+`
+export const FooterContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #000000;
+  padding-top: 5%;
+  padding-bottom: 3%;
+  padding-left: 7%;
+  padding-right: 7%;
+`
+
+export const FooterAppLogo = styled.img`
+  height: 28px;
+  width: 180px;
+  color: #ffffff;
+`
+
+export const FooterSubContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  //   padding-left: 8%;
+  //   align-items: center;
+`
+
+export const FooterSubContainerOne = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 60%;
+  padding-left: 8%;
+`
+
+export const ProductsContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  width: 150px;
+`
+
+export const ProductsHeading = styled.h1`
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: gray;
+`
+
+export const Para = styled.p`
+  font-size: 0.8rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  cursor: pointer;
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+export const PartnerContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  //   align-items: flex-start;
+  width: 150px;
+`
+
+export const PartnerHeading = styled.h1`
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: gray;
+`
+
+export const FooterIndustryContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  //   justify-content: center;
+  //   align-items: center;
+  width: 150px;
+`
+export const FooterIndustryHeading = styled.h1`
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 500;
+  color: gray;
+`
+export const AddressContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  //   width: 200px;
+  //   align-items: center;
+`
+
+export const CountryName = styled.h1`
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 600;
+  color: gray;
+  margin-bottom: 0px;
+  //   opacity: 0.5;
+`
+
+export const Address = styled.p`
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  color: #ffffff;
+  margin-top: 0px;
+  cursor: pointer;
+
+  &:hover {
+    text-decoration: underline;
+  }
+`
+
+export const SocialMediaImageContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 170px;
+  align-self: flex-end;
+  margin-right: 4%;
+`
+
+export const SocialMediaImage = styled.img`
+  height: 2rem;
+  width: auto;
+`
+
+export const CopyRightsContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  margin-left: 9%;
+  margin-right: 9%;
+`
+
+export const CopyRightsHeading = styled.h1`
+  font-size: 0.9rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+`
+
+export const PolicyContainer = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`
+
+export const PolicyTitle = styled.h1`
+  font-size: 0.9rem;
+  font-family: 'Roboto';
+  font-weight: 400;
+  margin: 10px;
+  cursor: pointer;
+`
+export const ProductsNameCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  //   align-items: center;
+  flex-wrap: wrap;
 `

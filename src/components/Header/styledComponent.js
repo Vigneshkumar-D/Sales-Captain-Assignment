@@ -17,7 +17,6 @@ export const HeaderContainer = styled.div`
   width: 100%;
   position: fixed;
   margin-top: 0px;
-  //
   background-color: #ffffff;
 `
 export const AppLogo = styled.img`
@@ -110,6 +109,7 @@ export const ProductMainContainer = styled.div`
   margin-top: 20px;
   background-color: #ffffff;
   margin-top: 5%;
+  //   display: none;
   //   width: 100%;
   //   display: flex;
   //   flex-direction: column;
