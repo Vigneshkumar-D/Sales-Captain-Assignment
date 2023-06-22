@@ -11,8 +11,13 @@ export const IndustryCardContainer = styled.li`
   height: 150px;
   padding: 10px;
   margin: 10px;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
+
+  &:hover {
+    transform: translateY(-10px);
+    transition: 0.5s;
+  }
 `
 export const IndustryCardImage = styled.img`
   height: 50px;

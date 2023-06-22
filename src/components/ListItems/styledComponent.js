@@ -26,6 +26,9 @@ export const ListHeating = styled.h1`
   font-family: 'Roboto';
   text-align: left;
   margin-bottom: 0px;
+  &:hover {
+    color: #3b82f6;
+  }
 `
 export const ListDes = styled.p`
   font-size: 12px;

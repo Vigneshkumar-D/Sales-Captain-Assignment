@@ -8,6 +8,7 @@ export const ExpertCardListItem = styled.div`
   width: 32%;
   padding: 10px;
   margin-top: 0px;
+  height: 30rem;
 `
 export const ExpertCardImage = styled.img`
   height: 250px;

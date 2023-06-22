@@ -26,29 +26,37 @@ let productCssProperty = 'product-invisible'
 let solutionCssProperty = 'solution-invisible'
 
 class Header extends Component {
-  state = {isHovered: false}
+  state = {productIsHovered: false, solutionIsHover: false}
 
   onHoverProduct = () => {
-    productCssProperty = 'product-visible'
-    this.setState(prevState => ({isHovered: !prevState.isHovered}))
+    this.setState(prevState => ({
+      productIsHovered: !prevState.productIsHovered,
+    }))
   }
 
   onLeaveProduct = () => {
-    productCssProperty = 'product-invisible'
-    this.setState(prevState => ({isHovered: !prevState.isHovered}))
+    this.setState(prevState => ({
+      productIsHovered: !prevState.productIsHovered,
+    }))
   }
 
   onHoverSolution = () => {
-    solutionCssProperty = 'solution-visible'
-    this.setState(prevState => ({isHovered: !prevState.isHovered}))
+    this.setState(prevState => ({solutionIsHover: !prevState.solutionIsHover}))
   }
 
   onLeaveSolution = () => {
-    solutionCssProperty = 'solution-invisible'
-    this.setState(prevState => ({isHovered: !prevState.isHovered}))
+    this.setState(prevState => ({
+      solutionIsHover: !prevState.solutionIsHover,
+    }))
   }
 
   render() {
+    const {productIsHovered, solutionIsHover} = this.state
+    productCssProperty =
+      productIsHovered === true ? 'product-visible' : 'product-invisible'
+    solutionCssProperty =
+      solutionIsHover === true ? 'solution-visible' : 'solution-invisible'
+
     return (
       <HeaderMainContainer>
         <HeaderContainer>

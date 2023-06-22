@@ -21,6 +21,7 @@ import {
   LoginButton,
   PasswordContainer,
   ForgerPasswordButton,
+  AppLogoContainer,
 } from './styledComponent'
 import './index.css'
 
@@ -42,10 +43,12 @@ class Login extends Component {
         <LoginPageSubContainer>
           <LoginPageFormContainer>
             <LoginPageForm>
-              <AppLogo
-                src="https://app.salescaptain.com/static/media/loginLogo.3814067f45867b0a416c.png"
-                alt="App Logo"
-              />
+              <AppLogoContainer>
+                <AppLogo
+                  src="https://app.salescaptain.com/static/media/loginLogo.3814067f45867b0a416c.png"
+                  alt="App Logo"
+                />
+              </AppLogoContainer>
               <LoginHeading>Login</LoginHeading>
               <CustomInputEmail type="text" placeholder="Email" />
               <PasswordContainer>

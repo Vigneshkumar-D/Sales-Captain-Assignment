@@ -65,7 +65,7 @@ export const InputElement = styled.input`
   margin-right: 1rem;
   border-radius: 10px;
   border: 1px solid lightgray;
-  //   outline: 1px solid #3b82f6;
+  outline: none;
 `
 
 export const GetDemoButton = styled.button`
@@ -82,6 +82,7 @@ export const GetDemoButton = styled.button`
   font-family: 'Roboto';
   font-size: 1rem;
   height: 3rem;
+  cursor: pointer;
 `
 
 export const SiteBackgroundImage = styled.img`
@@ -333,11 +334,15 @@ export const IndustryDescription = styled.p`
 export const IndustryList = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 7%;
+  padding-top: 7%;
+  margin-left: 7%;
+  margin-right: 7%;
+  z-index: 0;
+  //   position: relative;
 `
 export const ExpertContainer = styled.div`
   display: flex;

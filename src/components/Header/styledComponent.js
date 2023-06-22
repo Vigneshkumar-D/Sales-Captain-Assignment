@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const HeaderMainContainer = styled.div`
   display: flex;
   position: relative;
+  z-index: 10;
 `
 
 export const HeaderContainer = styled.div`
@@ -87,6 +88,7 @@ align-items: center;
   font-weight; 600;
   padding: 18px;
   height: 28px;
+  cursor: pointer;
 `
 export const GetStartedButton = styled.button`
   display: flex;
@@ -103,6 +105,7 @@ export const GetStartedButton = styled.button`
   padding-left: 15px;
   padding-right: 15px;
   height: 30px;
+  cursor: pointer;
 
 `
 export const ProductMainContainer = styled.div`

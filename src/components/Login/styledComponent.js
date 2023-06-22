@@ -5,12 +5,12 @@ export const LoginPageContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   //   align-items: center;
-  background-image: url('https://app.salescaptain.com/static/media/loginSidePanel.6cc7d5c0ea3bc4deefac.jpeg');
+  background-image: url('https://assets.website-files.com/62a83ee090ccdee139c347e5/62defe243b03ce85cb2d8c9d_Mask%20Group%20165.webp');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
   height: 100vh;
-  //   width: 100%;
+  width: 100%;
 `
 export const LoginPageSubContainer = styled.div`
   display: flex;
@@ -31,7 +31,6 @@ export const LoginPageFormContainer = styled.div`
   border-radius: 5px;
   box-shadow: '0px 3px 7px 3px #e2e8f0';
   padding: 10px;
-  background-color: ${props => props.formBgColor};
 `
 export const LoginPageForm = styled.form`
   display: flex;
@@ -41,6 +40,9 @@ export const LoginPageForm = styled.form`
   width: 300px;
   text-align: center;
 `
+
+export const AppLogoContainer = styled.div``
+
 export const AppLogo = styled.img`
   width: 180px;
   margin: 30px;
