@@ -1,25 +1,6 @@
 // Style your elements here
 import styled from 'styled-components'
 
-// export const GradientDirectionItemContainer = styled.li`
-//   background-color: transparent;
-//   margin: 10px;
-// `
-// export const DirectionItem = styled.button`
-//   font-size: 17px;
-//   padding: 10px;
-//   font-weight: 500;
-//   color: #1e293b;
-//   background-color: #ffffff;
-//   color: ${props => (props.isActive ? '#334155' : '#1e293b')};
-//   opacity: ${props => (props.isActive ? 1 : 0.5)};
-//   border-radius: 10px;
-//   min-width: 120px;
-//   border: none;
-//   outline: none;
-//   cursor: pointer;
-// `
-
 export const MainHeadingContainer = styled.div`
   width: 100%;
   display: flex;
@@ -30,8 +11,10 @@ export const MainHeadingContainer = styled.div`
 export const MainHeading = styled.h1`
   text-align: center;
   font-size: 70px;
-  font-weight: 900;
+  font-family: 'Roboto';
+  font-weight: 1000;
   max-width: 700px;
+  margin-bottom: 2%;
 `
 
 export const MainDescriptionContainer = styled.div`
@@ -86,7 +69,6 @@ export const GetDemoButton = styled.button`
 `
 
 export const SiteBackgroundImage = styled.img`
-  // background-image: cover;
   width: 100%;
 `
 
@@ -125,6 +107,7 @@ export const MemberCardContainer = styled.div`
   padding: 1rem;
   width: 100%;
   min-height: 700px;
+  margin-top: 3%;
 `
 
 export const MemberCardSubContainer = styled.div`
@@ -132,11 +115,12 @@ export const MemberCardSubContainer = styled.div`
   border-radius: 1rem;
   width: 25rem;
   margin: 1rem;
-  padding: 2rem 2rem 5rem 2rem;
+  padding: 2rem;
   height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 0px;
 `
 
 export const MemberCardRowOne = styled.div`
@@ -169,7 +153,6 @@ export const PositionContainer = styled.div`
 
 export const MemberCardRowTwo = styled.div`
   font-size: 1.2rem;
-  margin: 2rem 1rem;
   line-height: 2rem;
   text-align: center;
 `
@@ -185,39 +168,50 @@ export const MemberCardRowThree = styled.div`
 export const MemberCardRowFour = styled.div`
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   font-size: 1.5rem;
+  margin-bottom: 1%;
 `
 
 export const MemberCardRowFourChild = styled.div`
   width: 70%;
   text-align: center;
   font-size: 1.2rem;
-  margin-top: 5px;
+  margin-top: 0px;
 `
 export const MemberCardRowFive = styled.div`
   font-weight: 600;
-  margin-top: 3rem;
+  font-size: 19px;
+  margin-bottom: 4%;
+  color: #333333;
+`
+export const ProductUsedContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 `
 
 export const MemberCardRowSix = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-top: 1rem;
 `
 
 export const SmallCard = styled.div`
-  background-color: skyblue;
-  opacity: 0.6;
-  z-index: -1;
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  border-radius: 10px;
-  margin: 5px;
   display: flex;
-  color: black;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: skyblue;
+  z-index: -1;
+  padding: 10px;
+  border-radius: 13px;
+  margin: 5px;
+  margin-left: 0px;
+  display: flex;
+  color: #000000;
+  height: 35px;
   font-size: 16px;
   font-weight: 400;
 `
@@ -225,6 +219,8 @@ export const BusinessNxtLevelContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 4%;
+  margin-bottom: 5%;
 `
 export const BusinessNxtLevelCard = styled.div`
   box-shadow: rgb(190, 187, 187) 0px 0px 2px;
@@ -233,12 +229,19 @@ export const BusinessNxtLevelCard = styled.div`
   margin: 1rem;
   padding: 2rem 2rem 5rem 2rem;
 `
-export const BusinessNxtLevelHeading = styled.div`
-  font-size: 2rem;
-  font-weight: 500;
-  color: #3b82f6;
+
+export const BusinessNxtLevelMainHeading = styled.h1`
+  font-size: 3rem;
+  font-weight: 700;
   margin-top: 0.7%;
   margin-bottom: 0px;
+`
+export const BusinessNxtLevelHeading = styled.div`
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0.7%;
+  margin-bottom: 0px;
+  color: #3b82f6;
 `
 
 export const BusinessNxtLevelSubContainer = styled.div`
@@ -277,6 +280,7 @@ export const BusinessCardSubHeading = styled.h1`
   font-weight: 700;
   margin-bottom: 0px;
   color: #000000;
+  margin-top: 0px;
 `
 
 export const BusinessCardSubDes = styled.div`
@@ -317,9 +321,9 @@ export const IndustryContainer = styled.div`
 `
 
 export const IndustryHeading = styled.h1`
-  font-size: 40px;
+  font-size: 3rem;
+  font-weight: 700;
   font-family: 'Roboto';
-  font-weight: 600;
   margin-top: 0px;
   margin-bottom: 10px;
 `
@@ -327,22 +331,21 @@ export const IndustryDescription = styled.p`
   font-size: 22px;
   font-family: 'Roboto';
   font-weight: 400;
-  margin-top: 0px;
+  margin-top: 1.5%;
+  //   margin-top: 0px;
   color: gray;
   margin-bottom: 10px;
 `
 export const IndustryList = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
   list-style: none;
-  padding-top: 7%;
+  padding-top: 4%;
   margin-left: 7%;
   margin-right: 7%;
-  z-index: 0;
-  //   position: relative;
 `
 export const ExpertContainer = styled.div`
   display: flex;
@@ -479,8 +482,6 @@ export const FooterSubContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   width: 100%;
-  //   padding-left: 8%;
-  //   align-items: center;
 `
 
 export const FooterSubContainerOne = styled.div`
@@ -488,15 +489,13 @@ export const FooterSubContainerOne = styled.div`
   flex-direction: row;
   justify-content: space-around;
   width: 60%;
-  padding-left: 8%;
+  margin-left: 8%;
 `
 
 export const ProductsContainer = styled.div`
   display: flex;
   flex-direction: column;
-  //   justify-content: center;
-  //   align-items: center;
-  width: 150px;
+  width: 250px;
 `
 
 export const ProductsHeading = styled.h1`
@@ -505,7 +504,16 @@ export const ProductsHeading = styled.h1`
   font-weight: 600;
   color: gray;
 `
+export const ProductsNameCon = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
+  flex-wrap: wrap;
+
+  max-height: 250px;
+  margin: 2%;
+`
 export const Para = styled.p`
   font-size: 0.8rem;
   font-family: 'Roboto';
@@ -574,6 +582,7 @@ export const Address = styled.p`
 
   &:hover {
     text-decoration: underline;
+    transition: 1s;
   }
 `
 
@@ -584,7 +593,8 @@ export const SocialMediaImageContainer = styled.div`
   align-items: center;
   width: 170px;
   align-self: flex-end;
-  margin-right: 4%;
+  margin-right: 1.5%;
+  margin-top: 2%;
 `
 
 export const SocialMediaImage = styled.img`
@@ -621,11 +631,4 @@ export const PolicyTitle = styled.h1`
   font-weight: 400;
   margin: 10px;
   cursor: pointer;
-`
-export const ProductsNameCon = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  //   align-items: center;
-  flex-wrap: wrap;
 `

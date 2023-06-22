@@ -46,6 +46,7 @@ import {
   NameContainer,
   PositionContainer,
   BusinessNxtLevelContainer,
+  BusinessNxtLevelMainHeading,
   BusinessNxtLevelHeading,
   BusinessNxtLevelSubContainer,
   BusinessNxtLevelCard,
@@ -87,6 +88,7 @@ import {
   PolicyContainer,
   PolicyTitle,
   ProductsNameCon,
+  ProductUsedContainer,
 } from './styledComponents'
 
 const makeYourBusinessDataList = [
@@ -459,116 +461,85 @@ const Home = () => (
   <>
     <Header />
     <>
-      <MainHeadingContainer className="top-header-container">
-        <MainHeading className="first-heading">
-          Best way to grow your local business
-        </MainHeading>
+      <MainHeadingContainer>
+        <MainHeading>Best way to grow your local business</MainHeading>
       </MainHeadingContainer>
-      <MainDescriptionContainer className="Artificial_Intelligence_text_container">
-        <MainDescription className="Artificial_Intelligence_text">
+      <MainDescriptionContainer>
+        <MainDescription>
           Artificial Intelligence powered easy-to-use tools to get more
           customers & give them a better experience
         </MainDescription>
       </MainDescriptionContainer>
-      <InputContainer className="input-row">
-        <InputElement
-          name="demo-input"
-          className="demo-input"
-          placeholder="ENTER YOUR EMAIL"
-        />
-        <GetDemoButton type="button" className="demo-input-btn">
-          GET DEMO
-        </GetDemoButton>
+      <InputContainer>
+        <InputElement name="demo-input" placeholder="ENTER YOUR EMAIL" />
+        <GetDemoButton type="button">GET DEMO</GetDemoButton>
       </InputContainer>
       <SiteBackgroundImage
         alt="img"
         src="https://assets.website-files.com/62a83ee090ccdee139c347e5/62b0e6fa4473cb712ba3b454_home-hero-agnostic-l-2x-p-1600.webp"
       />
-      <TrustedCompaniesContainer className="second-header-container">
-        <TrustedCompaniesHeading className="second-header">
+      <TrustedCompaniesContainer>
+        <TrustedCompaniesHeading>
           Trusted by 100,000+ local businesses globally
         </TrustedCompaniesHeading>
       </TrustedCompaniesContainer>
-      <TrustedBrandList className="brand_row">
+      <TrustedBrandList>
         {brandLogo.map(eachItem => (
-          <BrandImage
-            className="brand-card"
-            key={eachItem.id}
-            src={eachItem.url}
-          />
+          <BrandImage key={eachItem.id} src={eachItem.url} />
         ))}
       </TrustedBrandList>
-      <MemberCardContainer className="member-card-container">
+      <MemberCardContainer>
         {memberCard.map(singleData => (
-          <MemberCardSubContainer key={singleData.id} className="memberCard">
-            <MemberCardRowOne className="row1">
-              <LeftContainer className="left">
-                <ProfileImage
-                  alt="profile-img"
-                  className="profile-img"
-                  src={singleData.img}
-                />
+          <MemberCardSubContainer key={singleData.id}>
+            <MemberCardRowOne>
+              <LeftContainer>
+                <ProfileImage alt="profile-img" src={singleData.img} />
               </LeftContainer>
-              <RightContainer className="right">
-                <NameContainer className="row1_top">
-                  {singleData.name}
-                </NameContainer>
-                <PositionContainer className="row1_bottom">
-                  {singleData.position}
-                </PositionContainer>
+              <RightContainer>
+                <NameContainer>{singleData.name}</NameContainer>
+                <PositionContainer>{singleData.position}</PositionContainer>
               </RightContainer>
             </MemberCardRowOne>
-            <MemberCardRowTwo className="row2">
-              {singleData.string}
-            </MemberCardRowTwo>
-            <MemberCardRowThree className="row3">
-              {singleData.offer}
-            </MemberCardRowThree>
-            <MemberCardRowFour className="row4">
-              <MemberCardRowFourChild className="row4_child">
+            <MemberCardRowTwo>&quot;{singleData.string}&quot;</MemberCardRowTwo>
+
+            <MemberCardRowFour>
+              <MemberCardRowThree>{singleData.offer}</MemberCardRowThree>
+              <MemberCardRowFourChild>
                 {singleData.offer_head}
               </MemberCardRowFourChild>
             </MemberCardRowFour>
-            <MemberCardRowFive className="row5">
-              Product used :
-            </MemberCardRowFive>
-            <MemberCardRowSix className="row6">
-              {singleData.product_used.map(data => (
-                <SmallCard className="smallcard">{data}</SmallCard>
-              ))}
-            </MemberCardRowSix>
+            <ProductUsedContainer>
+              <MemberCardRowFive>Product used:</MemberCardRowFive>
+              <MemberCardRowSix>
+                {singleData.product_used.map(data => (
+                  <SmallCard>{data}</SmallCard>
+                ))}
+              </MemberCardRowSix>
+            </ProductUsedContainer>
           </MemberCardSubContainer>
         ))}
       </MemberCardContainer>
-      <BusinessNxtLevelContainer className="third-header">
-        <BusinessNxtLevelHeading>
+      <BusinessNxtLevelContainer>
+        <BusinessNxtLevelMainHeading>
           Tools to take your business to next level
-        </BusinessNxtLevelHeading>
+        </BusinessNxtLevelMainHeading>
       </BusinessNxtLevelContainer>
-      <BusinessNxtLevelSubContainer className="secondCardsContainer">
+      <BusinessNxtLevelSubContainer>
         {secondCardsContainer.map(eachItem => (
-          <BusinessNxtLevelCard className="secondClassCard">
-            <BusinessNxtLevelHeading className="secondClassCardTitle">
-              {eachItem.title}
-            </BusinessNxtLevelHeading>
-            <BusinessNxtLevelDescription className="secondClassCardLable">
+          <BusinessNxtLevelCard>
+            <BusinessNxtLevelHeading>{eachItem.title}</BusinessNxtLevelHeading>
+            <BusinessNxtLevelDescription>
               {eachItem.paradata}
             </BusinessNxtLevelDescription>
-            <BusinessNxtLevelCardSubCon className="secondsmallCardContainer">
+            <BusinessNxtLevelCardSubCon>
               {eachItem.arrData.map(data => (
-                <BusinessNxtLevelCardSecCon className="secondsmallContainer">
-                  <BusinessCardImage
-                    alt="img"
-                    className="secondCardSmallImage"
-                    src={data.icon}
-                  />
+                <BusinessNxtLevelCardSecCon>
+                  <BusinessCardImage alt="img" src={data.icon} />
                   <BusinessCardSubCon>
-                    <BusinessCardSubHeading className="secondCardRightTop">
+                    <BusinessCardSubHeading>
                       {data.title}
                     </BusinessCardSubHeading>
-                    <BusinessCardSubDes className="secondCardRightBottom">
-                      {data.description}
-                    </BusinessCardSubDes>
+                    <BusinessCardSubDes>{data.description}</BusinessCardSubDes>
                   </BusinessCardSubCon>
                 </BusinessNxtLevelCardSecCon>
               ))}

@@ -19,12 +19,15 @@ export const BusinessCardHeading = styled.h1`
   font-size: 35px;
   font-weight: 600;
   font-family: 'Roboto';
+  margin-bottom: 10px;
 `
 
 export const BusinessCardDes = styled.p`
   font-size: 24px;
   font-family: 'Roboto';
   color: gray;
+  font-weight: 300;
+  }
 `
 
 export const BusinessCardGetStartedButton = styled.button`
@@ -34,6 +37,8 @@ export const BusinessCardGetStartedButton = styled.button`
   border: none;
   font-weight: 500;
   cursor: pointer;
+
+  padding-left: 0px;
   background-color: transparent;
 `
 export const BusinessCardImage = styled.img`

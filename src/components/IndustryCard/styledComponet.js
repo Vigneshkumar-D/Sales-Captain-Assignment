@@ -7,13 +7,12 @@ export const IndustryCardContainer = styled.li`
   align-items: center;
   border: 0.5px solid lightgray;
   box-shadow: 0px 5px 5px 2px #f1f1f1;
-  width: 270px;
-  height: 150px;
+  width: 280px;
+  height: 160px;
   padding: 10px;
-  margin: 10px;
+  margin: 7px;
   border-radius: 8px;
   cursor: pointer;
-
   &:hover {
     transform: translateY(-10px);
     transition: 0.5s;
