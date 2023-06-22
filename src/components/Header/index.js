@@ -17,6 +17,8 @@ import {
   ProductMainContainer,
   SolutionMainContainer,
   HeaderMainContainer,
+  ProductTitleContainer,
+  SolutionContainer,
 } from './styledComponent'
 import './index.css'
 
@@ -56,18 +58,29 @@ class Header extends Component {
           />
           <HeaderSubContainer>
             <MenuContainer>
-              <ProductTitle
-                onMouseOver={this.onHoverProduct}
-                onMouseLeave={this.onLeaveProduct}
-              >
-                Products
-              </ProductTitle>
-              <SolutionTitle
-                onMouseOver={this.onHoverSolution}
-                onMouseLeave={this.onLeaveSolution}
-              >
-                Solution
-              </SolutionTitle>
+              <ProductTitleContainer>
+                <ProductTitle
+                  onMouseOver={this.onHoverProduct}
+                  onMouseLeave={this.onLeaveProduct}
+                >
+                  Products
+                </ProductTitle>
+                <ProductMainContainer className={productCssProperty}>
+                  <Product />
+                </ProductMainContainer>
+              </ProductTitleContainer>
+              <SolutionContainer>
+                <SolutionTitle
+                  onMouseOver={this.onHoverSolution}
+                  onMouseLeave={this.onLeaveSolution}
+                >
+                  Solution
+                </SolutionTitle>
+                <SolutionMainContainer className={solutionCssProperty}>
+                  <Solution />
+                </SolutionMainContainer>
+              </SolutionContainer>
+
               <PricingTitle>Pricing</PricingTitle>
               <ResourcesTitle>Resources</ResourcesTitle>
               <SupportTitle>Support</SupportTitle>
@@ -80,12 +93,6 @@ class Header extends Component {
             </ButtonsContainer>
           </HeaderSubContainer>
         </HeaderContainer>
-        <ProductMainContainer className={productCssProperty}>
-          <Product />
-        </ProductMainContainer>
-        <SolutionMainContainer className={solutionCssProperty}>
-          <Solution />
-        </SolutionMainContainer>
       </HeaderMainContainer>
     )
   }

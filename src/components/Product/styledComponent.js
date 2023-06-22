@@ -5,10 +5,10 @@ export const ProductDetailsContainer = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  //   box-shadow: 0px -1px 4px #e2e8f0;
   height: 400px;
+  border-radius: 10px;
   box-shadow: 0px 2px 3px #e2e8f0;
-  //   margin-top: 10px;
+  margin-top: 10px;
 `
 
 export const AttractContainer = styled.div`

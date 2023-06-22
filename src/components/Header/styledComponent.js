@@ -108,16 +108,16 @@ export const GetStartedButton = styled.button`
 export const ProductMainContainer = styled.div`
   margin-top: 20px;
   background-color: #ffffff;
-  margin-top: 5%;
-  //   display: none;
-  //   width: 100%;
-  //   display: flex;
-  //   flex-direction: column;
-  //   align-items: center;
-  //   justify-content: center;
+  margin-top: 52.6px;
 `
 export const SolutionMainContainer = styled.div`
   margin-top: 20px;
   background-color: #ffffff;
-  margin-top: 5%;
+  margin-top: 52.6px;
+`
+export const ProductTitleContainer = styled.div`
+  display: flex;
+`
+export const SolutionContainer = styled.div`
+  display: flex;
 `
